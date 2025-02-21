@@ -5,7 +5,7 @@ body {
     padding: 0;
 }
 .container {
-    background: white;
+    background: rgba(255, 255, 255, 0.66);
     max-width: 500px;
     margin: 50px auto;
     padding: 20px;
@@ -26,8 +26,8 @@ input {
 }
 
 button {
-    background: #007bff;
-    color: white;
+    background: #dc8c00;
+    color: #ffffff;
     padding: 10px 15px;
     border: none;
     cursor: pointer;
@@ -35,12 +35,26 @@ button {
 }
 
 button:hover {
-    background: #0056b3;
+    background: #8e5b00;
 }
 
 .result {
+    color: green;
     margin-top: 20px;
     padding: 10px;
     background: #f9f9f9;
     border-radius: 5px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+td {
+    background-color: aliceblue;
 }
