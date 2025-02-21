@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WhoIS Scamming Me?</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>WhoIS Scamming Me?</h1>
+            <p>Simple tool for looking up who owns certain sites or domains.</p>
+            <input type="text" id="domainInput" placeholder="Enter a domain (e.g. example.com)" />
+            <button onclick="fetchWhois(); fetchIpAddress(); fetchLocation();">Check WHOIS</button>
+
+            <!-- WHOIS Table -->
+            <h2>WHOIS Information</h2>
+            <table id="whoisTable">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Domain</strong></td>
+                        <td id="domain">-</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Registrar</strong></td>
+                        <td id="registrar">-</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Registered On</strong></td>
+                        <td id="registeredDate">-</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Expiration Date</strong></td>
+                        <td id="expirationDate">-</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- IP Table -->
+            <h2>IP Address Information</h2>
+            <table id="ipTable">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>IP Address</strong></td>
+                        <td id="ipAddress">-</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Location Table -->
+            <h2>Location / Timezone</h2>
+            <table id="locationTable">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Location</strong></td>
+                        <td id="location">-</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Timezone</strong></td>
+                        <td id="timezone">-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
